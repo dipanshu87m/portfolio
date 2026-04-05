@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+/* Slate charcoal + ice cyan + white (studio / editorial dark UI) */
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bebas Neue', Impact, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-bg: #1a1f26;
+  --color-bg-muted: #232b35;
+  --color-surface: #2a323c;
+  --color-surface-hover: #323c48;
+  --color-border: #3d4754;
+  --color-ink: #ffffff;
+  --color-muted: #8ca6bd;
+  --color-accent: #a5c9e1;
+  --color-accent-hover: #c5ddf0;
+  --color-accent-soft: #2a3844;
+  --color-ring: #a5c9e1;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Fixed header: keep in-page anchors from hiding under the bar */
+  scroll-padding-top: 13rem;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 6.5rem;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  min-height: 100dvh;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-accent) 45%, transparent);
+  color: var(--color-bg);
+}
+
+.shadow-card {
+  box-shadow:
+    0 4px 32px rgba(26, 31, 38, 0.65),
+    0 0 0 1px rgba(165, 201, 225, 0.08);
+}
+
+.shadow-card-hover {
+  box-shadow:
+    0 16px 48px rgba(26, 31, 38, 0.75),
+    0 0 0 1px rgba(165, 201, 225, 0.2);
+}

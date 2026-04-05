@@ -1,0 +1,71 @@
+import portraitImage from '../../images/my_profile.jpeg'
+import { profile } from '../data/portfolio'
+
+export function HeroSection() {
+  const src = profile.imageUrl ?? portraitImage
+
+  return (
+    <section
+      id="top"
+      className="relative mx-auto max-w-6xl pb-20 pt-52 sm:pt-48 lg:pb-28 lg:pt-36 xl:pt-40"
+    >
+      <div className="flex flex-col items-center gap-10 sm:gap-12 lg:flex-row lg:items-start lg:justify-center lg:gap-10 xl:gap-12">
+        <div className="w-full max-w-2xl text-center lg:flex-1 lg:text-left">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted">
+            Hi, I&apos;m
+          </p>
+          <h1 className="font-display mt-4 text-[clamp(2.75rem,10vw,5.5rem)] leading-[0.95] tracking-[0.06em] text-white">
+            {profile.name.toUpperCase()}
+          </h1>
+          <p className="mt-6 text-sm font-medium uppercase tracking-[0.2em] text-accent sm:text-base">
+            {profile.title}
+          </p>
+          <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg lg:mx-0">
+            {profile.tagline}
+          </p>
+          <div className="mt-12 flex justify-center lg:justify-start">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-3 border border-accent/60 bg-transparent px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.25em] text-white transition-all hover:border-accent hover:bg-accent/10 hover:shadow-[0_0_40px_rgba(165,201,225,0.2)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Let&apos;s Talk
+              <span aria-hidden className="text-accent">
+                →
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div className="relative shrink-0 lg:-translate-x-6 lg:mt-1 xl:-translate-x-10">
+          <div className="group/photo relative">
+            <div
+              className="pointer-events-none absolute -inset-6 rounded-full bg-accent/0 blur-2xl transition-all duration-500 ease-out group-hover/photo:bg-accent/20"
+              aria-hidden
+            />
+            <div
+              className="pointer-events-none absolute -inset-[3px] rounded-full bg-gradient-to-br from-accent/40 via-transparent to-accent/20 opacity-0 blur-sm transition-opacity duration-500 group-hover/photo:opacity-100"
+              aria-hidden
+            />
+            <div className="relative h-[min(52vw,220px)] w-[min(52vw,220px)] sm:h-[252px] sm:w-[252px] lg:h-[272px] lg:w-[272px] rounded-full p-[2px] shadow-card transition-[box-shadow] duration-500 ease-out group-hover/photo:shadow-[0_0_0_1px_rgba(165,201,225,0.45),0_0_36px_rgba(165,201,225,0.25)]">
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-surface ring-1 ring-white/20 transition-[ring-color] duration-500 group-hover/photo:ring-accent/50">
+                <img
+                  src={src}
+                  alt={profile.name}
+                  width={544}
+                  height={544}
+                  decoding="async"
+                  fetchPriority="high"
+                  className="h-full w-full object-cover object-[center_25%]"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 rounded-full bg-accent/0 ring-1 ring-inset ring-black/10 transition-colors duration-500 group-hover/photo:bg-accent/10"
+                  aria-hidden
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

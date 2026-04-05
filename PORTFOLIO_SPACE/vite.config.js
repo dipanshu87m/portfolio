@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 // Relative base so the build works on GitHub Pages project sites
 // (e.g. https://YOUR_USERNAME.github.io/REPO_NAME/) without editing paths per repo.
 export default defineConfig({
-  base: './',
+  base: '/portfolio/',
   plugins: [react(), tailwindcss()],
 })

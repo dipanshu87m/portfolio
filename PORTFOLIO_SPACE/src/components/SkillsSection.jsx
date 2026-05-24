@@ -12,7 +12,13 @@ export function SkillsSection() {
       />
       <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {skills.map(({ name, abbr }) => {
-          const isSecurity = ['AES', 'TDES', 'SSL', 'TLS', 'HCE'].includes(name)
+          const isHighlighted = [
+            'Spring AI',
+            'Groq / Llama 3.3',
+            'RAG Architecture',
+            'Open Policy Agent',
+            'Trivy / Snyk',
+          ].includes(name)
           return (
             <article
               key={name}
@@ -20,7 +26,7 @@ export function SkillsSection() {
             >
               <div
                 className={`flex h-12 w-12 items-center justify-center rounded-lg font-mono text-xs font-semibold ${
-                  isSecurity
+                  isHighlighted
                     ? 'bg-accent/15 text-accent ring-1 ring-accent/35'
                     : 'bg-bg-muted text-muted ring-1 ring-border'
                 }`}

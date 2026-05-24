@@ -4,10 +4,10 @@ export function WorkedWith() {
   return (
     <section
       className="mx-auto max-w-6xl border-t border-border py-14 sm:py-16"
-      aria-label="Worked with"
+      aria-label="Products and platforms"
     >
       <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted">
-        Worked with
+        Products &amp; Platforms
       </p>
       <div className="mt-8 flex flex-wrap gap-3 sm:gap-4">
         {workedWith.map((name) => (

@@ -47,8 +47,8 @@ export function ContactSection() {
         aria-hidden
       />
       <p className="mx-auto mt-8 max-w-xl text-center text-sm leading-relaxed text-muted sm:text-base">
-        I&apos;d love to hear from you — whether it&apos;s about a project,
-        opportunity, or just to say hello 👋
+        Open to discussing backend engineering roles, project collaborations,
+        and new opportunities.
       </p>
       <div className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">
         {profile.phone ? (
@@ -64,7 +64,7 @@ export function ContactSection() {
             href={profile.whatsapp}
             icon={IconWhatsApp}
             title="WhatsApp"
-            subtitle={`Chat with ${profile.shortName}`}
+            subtitle={profile.phone}
             external
           />
         ) : null}
@@ -79,11 +79,11 @@ export function ContactSection() {
           icon={IconDownload}
           title="Resume"
           subtitle="Download Resume"
-          download
+          download={profile.resumeFileName}
         />
       </div>
       <p className="mt-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-muted">
-        Quick responses on WhatsApp &amp; Email
+        Quick responses on WhatsApp, phone &amp; email
       </p>
     </section>
   )

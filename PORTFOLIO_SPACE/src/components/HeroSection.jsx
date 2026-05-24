@@ -37,31 +37,21 @@ export function HeroSection() {
         </div>
 
         <div className="relative shrink-0 lg:-translate-x-6 lg:mt-1 xl:-translate-x-10">
-          <div className="group/photo relative">
-            <div
-              className="pointer-events-none absolute -inset-6 rounded-full bg-accent/0 blur-2xl transition-all duration-500 ease-out group-hover/photo:bg-accent/20"
-              aria-hidden
-            />
-            <div
-              className="pointer-events-none absolute -inset-[3px] rounded-full bg-gradient-to-br from-accent/40 via-transparent to-accent/20 opacity-0 blur-sm transition-opacity duration-500 group-hover/photo:opacity-100"
-              aria-hidden
-            />
-            <div className="relative h-[min(52vw,220px)] w-[min(52vw,220px)] sm:h-[252px] sm:w-[252px] lg:h-[272px] lg:w-[272px] rounded-full p-[2px] shadow-card transition-[box-shadow] duration-500 ease-out group-hover/photo:shadow-[0_0_0_1px_rgba(165,201,225,0.45),0_0_36px_rgba(165,201,225,0.25)]">
-              <div className="relative h-full w-full overflow-hidden rounded-full bg-surface ring-1 ring-white/20 transition-[ring-color] duration-500 group-hover/photo:ring-accent/50">
-                <img
-                  src={src}
-                  alt={profile.name}
-                  width={544}
-                  height={544}
-                  decoding="async"
-                  fetchPriority="high"
-                  className="h-full w-full object-cover object-[center_25%]"
-                />
-                <div
-                  className="pointer-events-none absolute inset-0 rounded-full bg-accent/0 ring-1 ring-inset ring-black/10 transition-colors duration-500 group-hover/photo:bg-accent/10"
-                  aria-hidden
-                />
-              </div>
+          <div className="group/photo hero-portrait relative h-[min(52vw,220px)] w-[min(52vw,220px)] sm:h-[252px] sm:w-[252px] lg:h-[272px] lg:w-[272px] p-[2px] shadow-card transition-[box-shadow] duration-500 ease-out group-hover/photo:shadow-[0_0_0_1px_rgba(165,201,225,0.45),0_0_32px_rgba(165,201,225,0.28),0_0_64px_rgba(165,201,225,0.12)]">
+            <div className="hero-portrait-inner relative h-full w-full bg-surface ring-1 ring-white/20 transition-[box-shadow] duration-500 ease-out group-hover/photo:ring-accent/50 group-hover/photo:shadow-[inset_0_0_0_1px_rgba(165,201,225,0.25)]">
+              <img
+                src={src}
+                alt={profile.name}
+                width={544}
+                height={544}
+                decoding="async"
+                fetchPriority="high"
+                className="object-[center_25%]"
+              />
+              <div
+                className="pointer-events-none absolute inset-0 bg-accent/0 transition-colors duration-500 ease-out group-hover/photo:bg-accent/10"
+                aria-hidden
+              />
             </div>
           </div>
         </div>

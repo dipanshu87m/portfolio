@@ -2,61 +2,62 @@ export const profile = {
   name: 'Dipanshu Barfa',
   shortName: 'Dipanshu',
   imageUrl: null,
-  title: 'Backend Engineer · Java · Spring Boot · Spring AI · LLM Integrations',
+  title: 'Backend Engineer | Java | Spring Boot | Spring AI',
   tagline:
-    'I build enterprise-grade backend systems and AI-powered features — from REST APIs and async Kafka pipelines to LLM integrations and Policy-as-Code — with a focus on shipping production-ready software in fast-moving teams.',
+    'Backend Engineer with 2 years of experience building production systems in Java 21 and Spring Boot 3. I design REST APIs, AI-powered product features, event-driven microservices, and Policy-as-Code authorization for enterprise deployments.',
   email: 'barfadipanshu87@gmail.com',
   phone: '+91-8349487113',
-  whatsapp: '',
+  whatsapp: 'https://wa.me/918349487113',
   github: 'https://github.com/dipanshu87m',
   linkedin: 'https://linkedin.com/in/dipanshumbarfa',
-  // Works on GitHub Pages project sites (subpath) and local dev
+  // Put your PDF at: public/resume.pdf — it will be served at /portfolio/resume.pdf
   resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`,
+  resumeFileName: 'Dipanshu_Barfa_Resume_2026.pdf',
 }
 
 export const about =
-  "I'm Dipanshu Barfa, a Backend Engineer based in Indore, India, with ~2 years of product-based startup experience at VisionWaves Technologies. I build enterprise-grade systems with Java 21 and Spring Boot 3 — shipping AI-powered email intelligence used across web, mobile, and voice clients, and designing a Policy-as-Code platform with Open Policy Agent for centralized RBAC/ABAC authorization at scale. I'm hands-on with LLM pipelines (Llama 3.3 / Groq), async Kafka architectures, multi-provider integrations (Microsoft Graph, Gmail, Exchange EWS), and DevSecOps tooling (Docker, Kubernetes, Trivy, Snyk). I own features end-to-end, mentor junior developers, and contribute to architectural decisions in fast-moving teams."
+  'I am Dipanshu Barfa, a Backend Engineer based in Indore, India, with 2 years of experience at VisionWaves Technologies, a product-based startup. I build enterprise-grade systems with Java 21 and Spring Boot 3, including AI-powered email intelligence used across web, mobile, and voice clients, and a Policy-as-Code platform with Open Policy Agent for centralized RBAC and ABAC authorization at scale. My work spans LLM pipelines with Llama 3.3 and Groq, asynchronous Kafka architectures, multi-provider integrations with Microsoft Graph, Gmail, and Exchange EWS, and DevSecOps practices with Docker, Kubernetes, Trivy, and Snyk. I own features end to end, mentor junior engineers, and contribute to architecture and delivery in agile teams.'
 
 export const workedWith = [
-  'VisionWaves',
-  'Telus',
-  'Aramco',
-  'HumainOS',
+  'Email Singularity',
+  'One Platform',
+  'Talk to Data',
+  'OPA Policy Manager',
   'ATLAS DataOps',
 ]
 
 export const skills = [
-  { name: 'Java 21', abbr: 'J21' },
-  { name: 'Spring Boot 3.4', abbr: 'SB3' },
-  { name: 'Spring AI', abbr: 'SAI' },
-  { name: 'REST APIs', abbr: 'REST' },
-  { name: 'AOP', abbr: 'AOP' },
-  { name: 'Hibernate / JPA', abbr: 'JPA' },
-  { name: 'Feign Client', abbr: 'Feign' },
-  { name: 'Groq / Llama 3.3', abbr: 'LLM' },
-  { name: 'RAG Architecture', abbr: 'RAG' },
-  { name: 'Open Policy Agent', abbr: 'OPA' },
-  { name: 'MariaDB', abbr: 'Maria' },
-  { name: 'PostgreSQL', abbr: 'Pg' },
-  { name: 'Redis', abbr: 'Redis' },
-  { name: 'Apache Kafka', abbr: 'Kf' },
-  { name: 'Microsoft Graph', abbr: 'Graph' },
-  { name: 'Gmail API', abbr: 'Gmail' },
-  { name: 'Keycloak', abbr: 'KC' },
-  { name: 'Docker', abbr: 'Dk' },
-  { name: 'Kubernetes', abbr: 'K8s' },
-  { name: 'Helm / ArgoCD', abbr: 'Helm' },
-  { name: 'SonarQube', abbr: 'SQ' },
-  { name: 'Trivy / Snyk', abbr: 'Sec' },
-  { name: 'SkyWalking', abbr: 'APM' },
-  { name: 'Maven', abbr: 'Mv' },
+  { name: 'Java 21' },
+  { name: 'Spring Boot 3.4' },
+  { name: 'Spring AI' },
+  { name: 'REST APIs' },
+  { name: 'AOP' },
+  { name: 'Hibernate / JPA' },
+  { name: 'Feign Client' },
+  { name: 'Groq / Llama 3.3' },
+  { name: 'RAG Architecture' },
+  { name: 'Open Policy Agent' },
+  { name: 'MariaDB' },
+  { name: 'PostgreSQL' },
+  { name: 'Redis' },
+  { name: 'Apache Kafka' },
+  { name: 'Microsoft Graph' },
+  { name: 'Gmail API' },
+  { name: 'Keycloak' },
+  { name: 'Docker' },
+  { name: 'Kubernetes' },
+  { name: 'Helm / ArgoCD' },
+  { name: 'SonarQube' },
+  { name: 'Trivy / Snyk' },
+  { name: 'SkyWalking' },
+  { name: 'Maven' },
 ]
 
 export const projects = [
   {
     title: 'Email Singularity — AI Email Intelligence',
     description:
-      'Production AI email platform powering mail summaries, day-overview dashboards, inbox prioritization, and conversation threading — enabling users to triage inboxes without reading every email across Office 365, on-prem Exchange, and Google Workspace.',
+      'Production AI email intelligence platform that delivers mail summaries, day-overview dashboards, inbox prioritization, and conversation threading. Supports Office 365, on-premises Exchange, and Google Workspace through a unified multi-provider architecture.',
     tech: [
       'Java 21',
       'Spring Boot 3.4',
@@ -76,7 +77,7 @@ export const projects = [
   {
     title: 'OPA Policy Manager & Governance SDK',
     description:
-      'Enterprise Policy-as-Code platform with a reusable Governance SDK enabling Spring Boot microservices to enforce OPA-based authorization via annotations — adopted by 10+ service teams with tamper-evident compliance audit trails.',
+      'Enterprise Policy-as-Code platform with a reusable Governance SDK that enables Spring Boot microservices to enforce OPA-based authorization through annotations. Adopted by 10+ service teams with tamper-evident compliance audit trails.',
     tech: [
       'Java 21',
       'Spring Boot',
@@ -96,7 +97,7 @@ export const projects = [
   {
     title: 'Talk to Data — AI Conversational DataOps',
     description:
-      'Enterprise conversational AI layer on Visionwaves\' ATLAS DataOps platform — letting data teams query pipelines, databases, Spark jobs, NiFi flows, and metadata in plain English, turning natural language into SQL, Spark code, and operational insights.',
+      'Conversational AI layer on the ATLAS DataOps platform that lets data teams query pipelines, databases, Spark jobs, NiFi flows, and metadata in natural language, returning validated SQL, Spark transformations, and operational insights.',
     tech: [
       'Java 21',
       'Spring Boot',
@@ -116,7 +117,7 @@ export const projects = [
   {
     title: 'Enttribe One Platform — Multi-Tenant SaaS',
     description:
-      'Enterprise-grade multi-tenant SaaS foundation powering identity, RBAC, org management, notifications, and configuration for large B2B deployments — the shared utility layer for products serving clients including Telus, Aramco, and HumainOS.',
+      'Enterprise multi-tenant SaaS foundation providing identity management, RBAC, organization administration, notifications, and tenant configuration. Serves as the shared platform layer for large B2B products deployed for enterprise clients including Telus, Aramco, and HumainOS.',
     tech: [
       'Java 21',
       'Spring Boot 3',

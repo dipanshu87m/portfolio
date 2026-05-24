@@ -60,3 +60,27 @@ body {
     0 16px 48px rgba(26, 31, 38, 0.75),
     0 0 0 1px rgba(165, 201, 225, 0.2);
 }
+
+/* Safari: keep portrait clip circular on hover (blur layers can render as squares) */
+.hero-portrait {
+  border-radius: 9999px;
+  isolation: isolate;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hero-portrait-inner {
+  border-radius: inherit;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(circle, #fff 99%, transparent 100%);
+  mask-image: radial-gradient(circle, #fff 99%, transparent 100%);
+}
+
+.hero-portrait-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}

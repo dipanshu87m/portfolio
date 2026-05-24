@@ -52,7 +52,7 @@ export function Navigation() {
           <a
             href={profile.resumeUrl}
             className="mr-2 inline-flex min-h-11 touch-manipulation items-center px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-accent transition-colors hover:text-accent-hover sm:min-h-0"
-            download
+            download={profile.resumeFileName}
           >
             Resume
           </a>

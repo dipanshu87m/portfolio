@@ -7,17 +7,17 @@ export function HeroSection() {
   return (
     <section
       id="top"
-      className="relative mx-auto max-w-6xl pb-20 pt-52 sm:pt-48 lg:pb-28 lg:pt-36 xl:pt-40"
+      className="relative mx-auto max-w-6xl pb-16 pt-28 sm:pb-20 sm:pt-32 lg:pb-28 lg:pt-36 xl:pt-40"
     >
       <div className="flex flex-col items-center gap-10 sm:gap-12 lg:flex-row lg:items-start lg:justify-center lg:gap-10 xl:gap-12">
         <div className="w-full max-w-2xl text-center lg:flex-1 lg:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted">
             Hi, I&apos;m
           </p>
-          <h1 className="font-display mt-4 text-[clamp(2.75rem,10vw,5.5rem)] leading-[0.95] tracking-[0.06em] text-white">
+          <h1 className="font-display mt-4 text-[clamp(2.25rem,9vw,5.5rem)] leading-[0.95] tracking-[0.04em] text-white sm:tracking-[0.06em]">
             {profile.name.toUpperCase()}
           </h1>
-          <p className="mt-6 text-sm font-medium uppercase tracking-[0.2em] text-accent sm:text-base">
+          <p className="mt-5 text-[11px] font-medium uppercase leading-relaxed tracking-[0.14em] text-accent sm:mt-6 sm:text-sm sm:tracking-[0.2em] md:text-base">
             {profile.title}
           </p>
           <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg lg:mx-0">

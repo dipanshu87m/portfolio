@@ -22,7 +22,7 @@
 html {
   scroll-behavior: smooth;
   /* Fixed header: keep in-page anchors from hiding under the bar */
-  scroll-padding-top: 13rem;
+  scroll-padding-top: 5.5rem;
 }
 
 @media (min-width: 1024px) {

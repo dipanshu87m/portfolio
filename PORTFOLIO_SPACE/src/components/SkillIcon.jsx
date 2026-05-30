@@ -1,4 +1,6 @@
-import { TbApi, TbLayersIntersect } from 'react-icons/tb'
+import { RiMicrosoftFill } from 'react-icons/ri'
+import { SiMeta, SiSonarqubecloud } from 'react-icons/si'
+import { TbApi, TbBolt, TbBrain, TbLayersIntersect, TbShieldLock } from 'react-icons/tb'
 
 function CdnBrandIcon({ slug, color, className = 'h-7 w-7' }) {
   return (
@@ -47,15 +49,18 @@ export const skillVisuals = {
     glow: 'rgba(109, 179, 63, 0.35)',
   },
   'Groq / Llama 3.3': {
-    icons: [{ kind: 'cdn', slug: 'groq', color: '#F55036' }],
+    icons: [
+      { kind: 'react', Icon: TbBolt, color: '#F55036', size: 'h-5 w-5' },
+      { kind: 'react', Icon: SiMeta, color: '#0081FB', size: 'h-5 w-5' },
+    ],
     glow: 'rgba(245, 80, 54, 0.35)',
   },
   'RAG Architecture': {
-    icons: [{ kind: 'cdn', slug: 'openai', color: '#10A37F' }],
+    icons: [{ kind: 'react', Icon: TbBrain, color: '#10A37F' }],
     glow: 'rgba(16, 163, 127, 0.35)',
   },
   'Open Policy Agent': {
-    icons: [{ kind: 'cdn', slug: 'openpolicyagent', color: '#00D4AA' }],
+    icons: [{ kind: 'react', Icon: TbShieldLock, color: '#00D4AA' }],
     glow: 'rgba(0, 212, 170, 0.35)',
   },
   MariaDB: {
@@ -75,7 +80,7 @@ export const skillVisuals = {
     glow: 'rgba(255, 255, 255, 0.2)',
   },
   'Microsoft Graph': {
-    icons: [{ kind: 'cdn', slug: 'microsoft', color: '#00A4EF' }],
+    icons: [{ kind: 'react', Icon: RiMicrosoftFill, color: '#00A4EF' }],
     glow: 'rgba(0, 164, 239, 0.35)',
   },
   'Gmail API': {
@@ -102,7 +107,7 @@ export const skillVisuals = {
     glow: 'rgba(239, 123, 77, 0.35)',
   },
   SonarQube: {
-    icons: [{ kind: 'cdn', slug: 'sonarqube', color: '#4479A1' }],
+    icons: [{ kind: 'react', Icon: SiSonarqubecloud, color: '#4479A1' }],
     glow: 'rgba(68, 121, 161, 0.35)',
   },
   'Trivy / Snyk': {

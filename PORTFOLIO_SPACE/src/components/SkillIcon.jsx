@@ -20,11 +20,11 @@ function ReactBrandIcon({ Icon, color, className = 'h-7 w-7' }) {
 
 /** @type {Record<string, { icons: { kind: 'cdn', slug: string, color: string, size?: string } | { kind: 'react', Icon: import('react').ComponentType<{ className?: string; style?: React.CSSProperties }>, color: string, size?: string }[], glow: string }>} */
 export const skillVisuals = {
-  'Java 21': {
+  Java: {
     icons: [{ kind: 'cdn', slug: 'openjdk', color: '#ED8B00' }],
     glow: 'rgba(237, 139, 0, 0.35)',
   },
-  'Spring Boot 3.4': {
+  'Spring Boot': {
     icons: [{ kind: 'cdn', slug: 'springboot', color: '#6DB33F' }],
     glow: 'rgba(109, 179, 63, 0.35)',
   },
@@ -48,7 +48,7 @@ export const skillVisuals = {
     icons: [{ kind: 'cdn', slug: 'spring', color: '#6DB33F' }],
     glow: 'rgba(109, 179, 63, 0.35)',
   },
-  'Groq / Llama 3.3': {
+  'Groq / Llama': {
     icons: [
       { kind: 'react', Icon: TbBolt, color: '#F55036', size: 'h-5 w-5' },
       { kind: 'react', Icon: SiMeta, color: '#0081FB', size: 'h-5 w-5' },

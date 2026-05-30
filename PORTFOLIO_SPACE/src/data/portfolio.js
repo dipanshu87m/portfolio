@@ -4,7 +4,7 @@ export const profile = {
   imageUrl: null,
   title: 'Backend Engineer | Java | Spring Boot | Spring AI',
   tagline:
-    'Backend Engineer with 2 years of experience building production systems in Java 21 and Spring Boot 3. I design REST APIs, AI-powered product features, event-driven microservices, and Policy-as-Code authorization for enterprise deployments.',
+    'Backend Engineer with 2 years of experience building production systems in Java and Spring Boot. I design REST APIs, AI-powered product features, event-driven microservices, and Policy-as-Code authorization for enterprise deployments.',
   email: 'barfadipanshu87@gmail.com',
   phone: '+91-8349487113',
   whatsapp: 'https://wa.me/918349487113',
@@ -16,7 +16,7 @@ export const profile = {
 }
 
 export const about =
-  'I am Dipanshu Barfa, a Backend Engineer based in Indore, India, with 2 years of experience at VisionWaves Technologies, a product-based startup. I build enterprise-grade systems with Java 21 and Spring Boot 3, including AI-powered email intelligence used across web, mobile, and voice clients, and a Policy-as-Code platform with Open Policy Agent for centralized RBAC and ABAC authorization at scale. My work spans LLM pipelines with Llama 3.3 and Groq, asynchronous Kafka architectures, multi-provider integrations with Microsoft Graph, Gmail, and Exchange EWS, and DevSecOps practices with Docker, Kubernetes, Trivy, and Snyk. I own features end to end, mentor junior engineers, and contribute to architecture and delivery in agile teams.'
+  'I am Dipanshu Barfa, a Backend Engineer based in Indore, India, with 2 years of experience at VisionWaves Technologies, a product-based startup. I build enterprise-grade systems with Java and Spring Boot, including AI-powered email intelligence used across web, mobile, and voice clients, and a Policy-as-Code platform with Open Policy Agent for centralized RBAC and ABAC authorization at scale. My work spans LLM pipelines with Llama and Groq, asynchronous Kafka architectures, multi-provider integrations with Microsoft Graph, Gmail, and Exchange EWS, and DevSecOps practices with Docker, Kubernetes, Trivy, and Snyk. I own features end to end, mentor junior engineers, and contribute to architecture and delivery in agile teams.'
 
 export const workedWith = [
   'Email Singularity',
@@ -27,14 +27,14 @@ export const workedWith = [
 ]
 
 export const skills = [
-  { name: 'Java 21' },
-  { name: 'Spring Boot 3.4' },
+  { name: 'Java' },
+  { name: 'Spring Boot' },
   { name: 'Spring AI' },
   { name: 'REST APIs' },
   { name: 'AOP' },
   { name: 'Hibernate / JPA' },
   { name: 'Feign Client' },
-  { name: 'Groq / Llama 3.3' },
+  { name: 'Groq / Llama' },
   { name: 'RAG Architecture' },
   { name: 'Open Policy Agent' },
   { name: 'MariaDB' },
@@ -59,13 +59,13 @@ export const projects = [
     description:
       'Production AI email intelligence platform that delivers mail summaries, day-overview dashboards, inbox prioritization, and conversation threading. Supports Office 365, on-premises Exchange, and Google Workspace through a unified multi-provider architecture.',
     tech: [
-      'Java 21',
-      'Spring Boot 3.4',
+      'Java',
+      'Spring Boot',
       'Spring AI',
       'Kafka',
       'Redis',
       'MariaDB',
-      'Groq / Llama 3.3',
+      'Groq / Llama',
     ],
     bullets: [
       'Built 15+ production REST APIs for mail summary, prioritization, and thread aggregation.',
@@ -79,7 +79,7 @@ export const projects = [
     description:
       'Enterprise Policy-as-Code platform with a reusable Governance SDK that enables Spring Boot microservices to enforce OPA-based authorization through annotations. Adopted by 10+ service teams with tamper-evident compliance audit trails.',
     tech: [
-      'Java 21',
+      'Java',
       'Spring Boot',
       'OPA / Rego',
       'Kafka',
@@ -99,7 +99,7 @@ export const projects = [
     description:
       'Conversational AI layer on the ATLAS DataOps platform that lets data teams query pipelines, databases, Spark jobs, NiFi flows, and metadata in natural language, returning validated SQL, Spark transformations, and operational insights.',
     tech: [
-      'Java 21',
+      'Java',
       'Spring Boot',
       'Spring AI',
       'Redis',
@@ -119,8 +119,8 @@ export const projects = [
     description:
       'Enterprise multi-tenant SaaS foundation providing identity management, RBAC, organization administration, notifications, and tenant configuration. Serves as the shared platform layer for large B2B products deployed for enterprise clients including Telus, Aramco, and HumainOS.',
     tech: [
-      'Java 21',
-      'Spring Boot 3',
+      'Java',
+      'Spring Boot',
       'Keycloak',
       'Redis',
       'Kafka',
